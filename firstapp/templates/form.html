@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/submit_form" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label>Title : </label><input type="text" name="title"><br>
+        <label>Description : </label><input type="text" name="description"><br>
+        <label>URL SLUG : </label><input type="text" name="url_slug"><br>
+        <label>Contents : </label><input type="text" name="contents"><br>
+        <label>Published : </label><input type="text" name="published"><br>
+        <label>Created At : </label><input type="text" name="created_at"><br>
+        <label>Image : </label><input type="file" name="image"><br>
+
+    <button type="submit">Add Data</button>
+
+</form>
+</body>
+</html>

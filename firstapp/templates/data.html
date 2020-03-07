@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>{{ data }}</title>
+        ...........
+    </head>
+<body>
+{% for country in data %}
+<label> {{country.title}}</label><a href="/delete_data/{{country.id}}">Delete Data</a><br>
+{% endfor %}
+</body>
+</html>

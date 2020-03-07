@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{ data.title }}
+<form action="/update_data" method="post">
+     {% csrf_token %}
+     ID : <input type="text" name="id" value="{{ data.id }}">
+    Title : <input type="text" name="title" value="{{ data.title }}">
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
